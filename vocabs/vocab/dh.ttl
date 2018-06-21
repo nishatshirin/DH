@@ -1,0 +1,357 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .@prefix ns0: <http://purl.org/vocab/vann/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+### Vocabulary metadata ###
+
+<http://http://purl.org/dh/vocabs/vocab/>
+  ns0:preferredNamespacePrefix "dh" ;
+  ns0:preferredNamespaceUri "http://http://purl.org/dh/vocabs/vocab/" ;
+  dc:title "dh Vocabulary"@en ;
+  dc:title "Vocabulário dh"@pt ;
+  dc:title "Vocabulario dh"@es ;
+  dc:title "Vocabolario dh"@it ;
+  dc:title "Vocabulaire dh"@fr ;
+  dc:description "A vocabulary for Skillful Informal Sector(SIS). This vocabulary is designed to be used in combination with the metadata schemes/vocabularies/ontologies: dcterms, good relations,time, foaf,essglobal, vcard and schema.org - this is defined in the Dublin Core Application Profile of the SSE. Developed by the dh group promoting Informal labour Upliftment in association with the researchers of NIT Durgapur and Universuity de Minho.It can be a an Empowerment to the Social and Solodarity Economy (SSE)"@en ;
+  dc:description "Um vocabulário para o Sector Informal Hábil (SIS). Este vocabulário foi concebido para ser usado em combinação com os esquemas de metadados / vocabulários / ontologias: dcterms, boas relações, tempo, foaf, essglobal, vcard e schema.org - isto é definido no Dublin Core Application Profile do SSE. Desenvolvido pelo grupo dh de promoção da elevação do trabalho informal em associação com os investigadores do NIT Durgapur e Universuity de Minho. Pode ser um Empoderamento para a Economia Social e Solidária (SSE)"@pt ;
+  dc:description "Un vocabulario para el Sector informal hábil(SIS). Este vocabulario está diseñado para ser utilizado en combinación con los esquemas / vocabularios / ontologías de metadatos: dcterms, good relations, time, foaf, essglobal, vcard y schema.org - esto se define en el Dublin Core Application Profile del SSE. Desarrollado por el grupo dh que promueve la elevación del trabajo informal en asociación con los investigadores de NIT Durgapur y la Universidad de Minho. Puede ser un Empoderamiento de la Economía Social y Solidaria (ESS)"@es ;
+  dc:description "Un vocabulario para o Secteur informel habile (SIS). Este vocabulario está deseñado para ser usado en combinación cos esquemas de metadatos / vocabularios / ontoloxías: dcterms, boas relacións, tempo, foaf, essglobal, vcard e schema.org - isto defínese no Dublin Core Application Profile of the SSE. Desenvolvido polo grupo dh que promove o aproveitamento informal do traballo en asociación cos investigadores de NIT Durgapur e Universidade de Minho. Pode ser un Empoderamento á Economía Social e Solidaria (SSE)"@fr ;
+  dc:description "Un vocabolario per Skillful Informal Sector (SIS). Questo vocabolario è stato progettato per essere utilizzato in combinazione con schemi di metadati / vocabolari / ontologie: dcterms, buone relazioni, tempo, foaf, essglobal, vcard e schema.org - questo è definito nel Dublin Application Profile Profile dell'SSE. Sviluppato dal gruppo dh promuovendo il lavoro informale Upliftment in collaborazione con i ricercatori di NIT Durgapur e Universuity de Minho. Può essere un empowerment per l'economia sociale e solidale (SSE)."@it ;
+  dc:issued "2018-03-05"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  owl:versionInfo 1.1 ;
+##cc:license <http://creativecommons.org/licenses/by/3.0/> ;
+  dc:publisher <http://opendata.dsi.uminho.pt> ;
+  dc:creator "Nishat Raza"  ;
+  dc:contributor <http://www.nitdgp.ac.in> ;
+  dc:contributor <http://algoritmi.uminho.pt/> .
+
+### Classes ###
+
+<http://purl.org/dh/vocabs/vocab/Person>
+  rdfs:label "Person"@en ;
+  rdfs:label "Pessoa"@pt ;
+  dc:description "An person can be anyone - a worker,an employer etc.  "@en ;
+  dc:description " Uma pessoa pode ser qualquer um - um trabalhador, um empregador, etc. "@pt ;
+  rdfs:isDefinedBy "http://purl.org/dh/vocabs/vocab/" ;
+  dc:issued "2014-02-06"^^xsd:date ;
+  dc:modified "2015-05-04"^^xsd:date ;
+  a rdfs:Class ;
+  rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> .
+
+<http://purl.org/dh/vocabs/vocab/Worker>
+  rdfs:label "Worker"@en ;
+  rdfs:label "Trabalhador"@pt ;
+  dc:description "An person who is skilled in specific sector and can be hired.  "@en ;
+  dc:description " Uma pessoa que é especializada em setores específicos e pode ser contratada. "@pt ;
+  rdfs:isDefinedBy "http://purl.org/dh/vocabs/vocab/" ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a rdfs:Class ;
+  rdfs:subClassOf <http://purl.org/dh/vocabs/vocab/Person> .
+  
+<http://purl.org/dh/vocabs/vocab/Employer>
+  rdfs:label "Employer"@en ;
+  rdfs:label "Empregador"@pt ;
+  dc:description "An person needs to hire another person for completing a particular job.  "@en ;
+  dc:description " Uma pessoa precisa contratar outra pessoa para completar um trabalho específico. "@pt ;
+  rdfs:isDefinedBy "http://purl.org/dh/vocabs/vocab/" ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a rdfs:Class ;
+  rdfs:subClassOf <http://purl.org/dh/vocabs/vocab/Person> .
+
+<http://purl.org/dh/vocabs/vocab/WorkerGroup>
+  rdfs:label "WorkerGroup"@en ;
+  rdfs:label "Gruppo di lavoro"@pt ;
+  dc:description "A group of individuals that participate in the SIS(Skillful Informal Sector)with same set of skills. "@en ;
+  dc:description "Um grupo de indivíduos que participam do SIS (Setor Informal Hábil) com o mesmo conjunto de habilidades. "@pt ;
+  rdfs:isDefinedBy "http://purl.org/dh/vocabs/vocab/" ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a rdfs:Class ;
+  rdfs:subClassOf <http://www.w3.org/ns/essglobal#SSEInitiative> .
+  
+<http://purl.org/dh/vocabs/vocab/Address>
+  rdfs:label "Address"@en ;
+  rdfs:label "Endereço"@pt ;
+  dc:description "The physical address of the Worker,Employer,Worker Group etc. "@en ;
+  dc:description "O endereço físico do trabalhador, empregador, grupo de trabalhadores, etc.  "@pt ;
+  rdfs:isDefinedBy "http://purl.org/dh/vocabs/vocab/" ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a rdfs:Class ;
+  rdfs:subClassOf <http://www.w3.org/ns/essglobal#Address> .
+
+<http://purl.org/dh/vocabs/vocab/Appointment>
+  rdfs:label "Appointment"@en ;
+  rdfs:label "Compromisso"@pt ;
+  dc:description "An appointment or handshaking that is formed between two or more at a specific agents "@en ;
+  dc:description "Um compromisso ou handshaking formado entre dois ou mais em um agente específico. "@pt ;
+  rdfs:isDefinedBy "http://purl.org/dh/vocabs/vocab/" ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2015-03-27"^^xsd:date ;
+  a rdfs:Class .
+
+
+### VES Classes ###
+<http://purl.org/dh/vocabs/vocab/SkillType>
+  rdfs:label "SkillType VES"@en ;
+  rdfs:label "SkillType VES"@pt ;
+  dc:description "The SkillType vocabulary encoding scheme"@en ;
+  dc:description "Lo schema di codifica del vocabolario SkillType"@pt ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ; 
+  rdfs:subClassOf skos:Concept ;
+  owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/dh/standard/SkillType> ] .
+  
+
+ <http://purl.org/dh/vocabs/vocab/PaymentType>
+  rdfs:label "PaymentType VES"@en ;
+  rdfs:label "Tipo de pagamento VES"@pt ;
+  dc:description "The PaymentType vocabulary encoding scheme"@en ;
+  dc:description "Lo schema di codifica del vocabolario di Tipo de pagamento"@pt ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ; 
+  rdfs:subClassOf skos:Concept ;
+  owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/dh/standard/PaymentType> ] .
+
+ <http://purl.org/dh/vocabs/vocab/PaymentMode>
+  rdfs:label "PaymentMode VES"@en ;
+  rdfs:label "modo de pagamento VES"@pt ;
+  dc:description "The PaymentMode vocabulary encoding scheme"@en ;
+  dc:description "Lo schema di codifica del vocabolario modo de pagamento"@pt ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ; 
+  rdfs:subClassOf skos:Concept ;
+  owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/dh/standard/PaymentMode> ] .
+ 
+
+
+### DataType Properties ###
+
+<http://purl.org/dh/vocabs/vocab/hasRating>
+  rdfs:label "has Rating"@en ;
+  rdfs:label "Tem Avaliação"@pt ;
+  dc:description "The rating of the worker given to by employer according to his work behavior/Work delivered in the scale of 1 to 5. "@en ;
+  dc:description "A classificação do trabalhador dada pelo empregador de acordo com seu comportamento de trabalho / Trabalho entregue. "@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal.
+
+<http://purl.org/dh/vocabs/vocab/hasReport>
+  rdfs:label "has Report"@en ;
+  rdfs:label "tem relatório"@pt ;
+  dc:description "The report associated with the employer given by a worker he hired after an appointment completion . "@en ;
+  dc:description "O relatório associado ao empregador dado por um trabalhador que ele contratou após um compromisso. "@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty .
+
+<http://purl.org/dh/vocabs/vocab/dateOfEnrollment>
+  rdfs:label "Date Of Enrollment"@en ;
+  rdfs:label "Data de inscrição"@pt ;
+  dc:description "The date of enrollment of the person in the dailyhire portal . "@en ;
+  dc:description "A data de inscrição da pessoa no portal dailyhire. "@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty .
+
+
+<http://purl.org/dh/vocabs/vocab/hasDefaultPayVisit>
+  rdfs:label "has Default Pay Visit"@en ;
+  rdfs:label "Tem visita de pagamento padrão"@pt ;
+  dc:description "The default visiting charges of a worker if the appointment(of work hiring) is fixed."@en ;
+  dc:description "As taxas de visita padrão de um trabalhador se o compromisso (de contratação de trabalho) for corrigido."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/hasDailyPayScale>
+  rdfs:label "has Daily Pay Scale"@en ;
+  rdfs:label "Tem escala de pagamento diário"@pt ;
+  dc:description "The amount charged by a person/worker on a daily basis on account of his services discharged."@en ;
+  dc:description "O montante cobrado por uma pessoa / trabalhador diariamente por conta dos seus serviços descarregados."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/hasMonthlyPayScale>
+  rdfs:label "has Monthly Pay Scale"@en ;
+  rdfs:label "Tem escala de pagamento mensal"@pt ;
+  dc:description "The amount charged by a person/worker on a monthly basis on account of his services discharged."@en ;
+  dc:description "O valor cobrado por pessoa / trabalhador mensalmente por conta de seus serviços dispensados."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/hasHourlyPayScale>
+  rdfs:label "has Hourly Pay Scale"@en ;
+  rdfs:label "Tem escala horária de pagamento"@pt ;
+  dc:description "The amount charged by a person/worker on a hourly basis on account of his services discharged."@en ;
+  dc:description "O montante cobrado por pessoa / trabalhador por hora, por conta dos seus serviços descarregados."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/hasPayPerPiece>
+  rdfs:label "has Pay Per Piece"@en ;
+  rdfs:label "Tem Pay Per Piece"@pt ;
+  dc:description "The amount charged by a worker on a Piece of his work,like a painting to an artist."@en ;
+  dc:description "O valor cobrado por uma trabalhador em um pedaço de seu trabalho, como uma pintura para um artista."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/DateOrgCreated>
+  rdfs:label "Date Of Constitution"@en ;
+  rdfs:label "Data da Constituição"@pt ;
+  dc:description "It refers to the date of constitution of an organistion,here a worker group."@en ;
+  dc:description "Refere-se à data de constituição de uma organização, aqui um grupo de trabalhadores."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/hasBuildingName>
+  rdfs:label "has Building Name"@en ;
+  rdfs:label "Tem nome do edifício"@pt ;
+  dc:description "It refers to the building name for easy identification of a person's address."@en ;
+  dc:description "Refere-se ao nome do prédio para facilitar a identificação do endereço de uma pessoa."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/Landmark>
+  rdfs:label "Landmark"@en ;
+  rdfs:label "Ponto de referência"@pt ;
+  dc:description "It refers to the landmark for easy identification of the place where a person's address."@en ;
+  dc:description "Refere-se ao marco para facilitar a identificação do local onde o endereço de uma pessoa."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/startDateTime>
+  rdfs:label "start Date Time"@en ;
+  rdfs:label "Hora da data de início"@pt ;
+  dc:description "The start date and time for an appointment that takes place."@en ;
+  dc:description "A data e hora de início de um compromisso que ocorre."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/endDateTime>
+  rdfs:label "end Date Time"@en ;
+  rdfs:label "Hora da data de término"@pt ;
+  dc:description "The end date and time for an appointment that takes place."@en ;
+  dc:description "A data e hora de término de um compromisso que ocorre."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/appointmentDescription>
+  rdfs:label "appointment Description"@en ;
+  rdfs:label "Descrição do Compromisso"@pt ;
+  dc:description "The detailed description of an appointment(about hiring need and work)."@en ;
+  dc:description "A data e hora de término de um compromisso que ocorre."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/isHavingSameAddress>
+  rdfs:label "is Having Same Address"@en ;
+  rdfs:label "sta avendo lo stesso indirizzo"@pt ;
+  dc:description "Boolean value corresponding to having same address or not."@en ;
+  dc:description "Valore booleano che corrisponde allo stesso indirizzo o no."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/hasPieceTypeOrderOf>
+  rdfs:label "has Piece Type Order Of"@en ;
+  rdfs:label "tem ordem de tipo de peça de"@pt ;
+  dc:description "This specifies the work piece type(for example cake type is to baker) that is ordered/ asked to fix by the job provider."@en ;
+  dc:description "Isso especifica o número do tipo de peça de trabalho (por exemplo, número de bolos é para o padeiro) que é pedido / pedido para ser corrigido pelo provedor de serviços."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range <http://purl.org/dh/vocabs/vocab/SkillType> .
+
+<http://purl.org/dh/vocabs/vocab/booksNoOfpieces>
+  rdfs:label "books No Of pieces"@en ;
+  rdfs:label "Livros Não De Peças"@pt ;
+  dc:description "This is the number of work piece type(example a cake for a baker)booked/asked to be fixed(example a tap to a plumber) according to the appointment."@en ;
+  dc:description "Este é o número de tipo de peça de trabalho (por exemplo, um bolo para um padeiro) reservado / pedido para ser corrigido (por exemplo, uma torneira para um encanador) de acordo com o compromisso."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+<http://purl.org/dh/vocabs/vocab/hasAppointmentAddress>
+  rdfs:label "has Appointment Address"@en ;
+  rdfs:label "ha l'indirizzo di appuntamento"@pt ;
+  dc:description "The appointment address is specified if hasSameAddress value is False."@en ;
+  dc:description "L'indirizzo dell'appuntamento è specificato se il valore hasSameAddress è False."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal .
+
+
+### Object Properties ###
+
+<http://purl.org/dh/vocabs/vocab/BooksAppointment>
+  rdfs:label "Books Appointment"@en ;
+  rdfs:label "Nomeação de Livros"@pt ;
+  dc:description "This object property is to help a person Employer book an appointment with a worker when his suitable required skills,or other constraints are matched."@en ;
+  dc:description "Esta propriedade de objeto é para ajudar uma pessoa Empregador a marcar uma consulta com um funcionário quando suas habilidades necessárias adequadas ou outras restrições forem correspondidas."@pt ;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:ObjectProperty .
+  
+<http://purl.org/dh/vocabs/vocab/hasAppointmentHolder>
+  rdfs:label "has Appointment Holder"@en ;
+  rdfs:label "Titular de nomeação"@pt ;
+  dc:description "This object property is to identify the employer,worker or worker groups that are involved in an appointment after the appointment is booked."@en ;
+  dc:description "Esta propriedade de objeto é identificar o empregador, trabalhador ou grupos de trabalhadores que estão envolvidos em um compromisso após o compromisso ser reservado."@pt;
+  rdfs:isDefinedBy <http://purl.org/dh/vocabs/vocab/> ;
+  dc:issued "2018-03-15"^^xsd:date ;
+  dc:modified "2018-03-27"^^xsd:date ;
+  a owl:ObjectProperty .
+  

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/" 
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xml:base="http://www.purl.org/dh/vocabs/standard/PaymentType/">
+
+
+<skos:ConceptScheme rdf:about="PaymentType">
+<dc:title>PaymentType</dc:title>
+       <dc:description>Payment Type of the Worker for payment procedure</dc:description>
+       <dc:creator>Nishat Raza (nishat.nitdgp.it.2018@gmail.com) </dc:creator>
+       <dc:contributor>Animesh Dutta (animeshnit@gmail.com)</dc:contributor>
+	    <dc:contributor>Sangeeta Sen (sangeetaaec@gmail.com)</dc:contributor>
+	    <dc:contributor>Mariana Malta (maltas.org)</dc:contributor>
+       <dc:contributor>Ana Alice Baptista (analice@dsi.uminho.pt)</dc:contributor>
+       <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dcterms:created>
+       <dc:language>en-en</dc:language>
+       <dc:relation rdf:resource="http://www.dsi.uminho.pt/"/>
+</skos:ConceptScheme>
+
+
+<skos:Concept rdf:ID="t01">
+        <skos:altLabel>D</skos:altLabel>
+        <skos:altLabel>Daily</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">du quotidien</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Diario</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Daily</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Diariamente</skos:prefLabel>
+        <skos:prefLabel xml:lang="IT">Quotidiano</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource="PaymentType"/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="t02">
+        <skos:altLabel>M</skos:altLabel>
+        <skos:altLabel>Monthly</skos:altLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Mensual</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Monthly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Por mês</skos:prefLabel>
+		<skos:prefLabel xml:lang="IT">Mensile</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource="PaymentType"/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="t03">
+        <skos:altLabel>H</skos:altLabel>
+        <skos:altLabel>Hourly</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource="PaymentType"/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="t04">
+        <skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>PayPerPiece</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Payer par pièce</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Pagar por pieza</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Pay Per Piece</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Pagar por peça</skos:prefLabel>
+        <skos:prefLabel xml:lang="IT">Paga per pezzo</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource="PaymentType"/>
+</skos:Concept>

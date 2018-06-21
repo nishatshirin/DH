@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/" 
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xml:base="http://www.purl.org/dh/standard/PaymentType/">
+
+
+<skos:ConceptScheme rdf:about="HasSkillType">
+	   <dc:title>HasSkillType</dc:title>
+       <dc:description>Skill Type Vocabulary</dc:description>
+       <dc:creator>Nishat Raza (nishat.nitdgp.it.2018@gmail.com) </dc:creator>
+       <dc:contributor>Animesh Dutta (animeshnit@gmail.com)</dc:contributor>
+	   <dc:contributor>Sangeeta Sen (sangeetaaec@gmail.com)</dc:contributor>
+	   <dc:contributor>Mariana Malta (maltas.org)</dc:contributor>
+       <dc:contributor>Ana Alice Baptista (analice@dsi.uminho.pt)</dc:contributor>
+       <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dcterms:created>
+       <dc:language>en-en</dc:language>
+       <dc:relation rdf:resource="http://www.dsi.uminho.pt/"/>
+</skos:ConceptScheme>
+
+
+<skos:Concept rdf:ID="s01">
+        <skos:altLabel>F</skos:altLabel>
+        <skos:altLabel>Food Production</skos:altLabel>
+		skos:topConceptOf rdf:ID="s01"
+        <skos:prefLabel xml:lang="FR">du quotidien</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Diario</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Daily</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Diariamente</skos:prefLabel>
+        <skos:prefLabel xml:lang="IT">Quotidiano</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="s02">
+		<skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>Plumbing</skos:altLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Mensual</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Monthly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Por mês</skos:prefLabel>
+			<skos:prefLabel xml:lang="IT">Mensile</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s03">
+		<skos:altLabel>B</skos:altLabel>
+        <skos:altLabel>Baby Sitting</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s03">
+		<skos:altLabel>B</skos:altLabel>
+        <skos:altLabel>Baby Sitting</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s04">
+		<skos:altLabel>D</skos:altLabel>
+        <skos:altLabel>Driving</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s05">
+		<skos:altLabel>3W</skos:altLabel>
+        <skos:altLabel>3-Wheeler</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s06">
+		<skos:altLabel>4W</skos:altLabel>
+        <skos:altLabel>4-Wheeler</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s07">
+		<skos:altLabel>Au</skos:altLabel>
+        <skos:altLabel>Auto-Rickshaw</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s08">
+		<skos:altLabel>Ca</skos:altLabel>
+        <skos:altLabel>Car</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:ID="s09">
+		<skos:altLabel>Ta</skos:altLabel>
+        <skos:altLabel>Taxi</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:ID="s10">
+		<skos:altLabel>Tr</skos:altLabel>
+        <skos:altLabel>Truck</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:ID="s11">
+		<skos:altLabel>Va</skos:altLabel>
+        <skos:altLabel>Van</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:ID="s12">
+		<skos:altLabel>CHF</skos:altLabel>
+        <skos:altLabel>Cook Home Food</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:ID="s13">
+		<skos:altLabel>BK</skos:altLabel>
+        <skos:altLabel>Baker</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:ID="s14">
+		<skos:altLabel>CSN</skos:altLabel>
+        <skos:altLabel>Cook Snacks</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s15">
+		<skos:altLabel>COO</skos:altLabel>
+        <skos:altLabel>Cookies</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s16">
+		<skos:altLabel>Ca</skos:altLabel>
+        <skos:altLabel>Cakes</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s17">
+		<skos:altLabel>Cuc</skos:altLabel>
+        <skos:altLabel>CupCakes</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s18">
+		<skos:altLabel>Ca</skos:altLabel>
+        <skos:altLabel>Cakes</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s19">
+		<skos:altLabel>ChocC</skos:altLabel>
+        <skos:altLabel>ChocoChips</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s20">
+		<skos:altLabel>But</skos:altLabel>
+        <skos:altLabel>Butter</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+		<skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="s21">
+		<skos:altLabel>Choc</skos:altLabel>
+        <skos:altLabel>Chocolate</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="s22">
+		<skos:altLabel>Vani</skos:altLabel>
+        <skos:altLabel>Vanilla</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="s22">
+		<skos:altLabel>RaB</skos:altLabel>
+        <skos:altLabel>Rainbow</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Horaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cada hora</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Hourly</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">De hora em hora</skos:prefLabel>
+      <skos:prefLabel xml:lang="IT">ogni ora</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+</rdf:RDF>

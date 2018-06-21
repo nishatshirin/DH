@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/" 
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xml:base="http://www.purl.org/dh/vocabs/standard/PaymentMode/">
+
+
+<skos:ConceptScheme rdf:about="Payment Mode">
+<dc:title>PaymentMode</dc:title>
+       <dc:description>Payment Mode specifically for appointment</dc:description>
+       <dc:creator>Nishat Raza (nishat.nitdgp.it.2018@gmail.com) </dc:creator>
+       <dc:contributor>Animesh Dutta (animeshnit@gmail.com)</dc:contributor>
+	    <dc:contributor>Sangeeta Sen (sangeetaaec@gmail.com)</dc:contributor>
+	    <dc:contributor>Mariana Malta (maltas.org)</dc:contributor>
+       <dc:contributor>Ana Alice Baptista (analice@dsi.uminho.pt)</dc:contributor>
+       <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dcterms:created>
+       <dc:language>en-en</dc:language>
+       <dc:relation rdf:resource="http://www.dsi.uminho.pt/"/>
+</skos:ConceptScheme>
+
+
+<skos:Concept rdf:ID="p01">
+        <skos:altLabel>N</skos:altLabel>
+        <skos:altLabel>By Card Net Banking</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Par carte</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Por tarjeta</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">By Card</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Por cartão</skos:prefLabel>
+        <skos:prefLabel xml:lang="IT">Con il card</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource="Payment Mode"/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="a02">
+        <skos:altLabel>C</skos:altLabel>
+        <skos:altLabel>By Cash</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">En espèces</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">En efectivo</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">By Cash</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Em dinheiro</skos:prefLabel>
+		<skos:prefLabel xml:lang="IT">In contanti</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource="PaymentMode"/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="a03">
+        <skos:altLabel>PT</skos:altLabel>
+        <skos:altLabel>Paytm</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">Paytm</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Paytm</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Paytm</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Paytm</skos:prefLabel>
+        <skos:prefLabel xml:lang="IT">Paytm</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource="PaymentMode"/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="a04">
+        <skos:altLabel>PP</skos:altLabel>
+        <skos:altLabel>Paypal</skos:altLabel>
+        <skos:prefLabel xml:lang="FR">PayPal</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">PayPal</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">PayPal</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">PayPal</skos:prefLabel>
+        <skos:prefLabel xml:lang="IT">PayPal</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource="PaymentMode"/>
+</skos:Concept>

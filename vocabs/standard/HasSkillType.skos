@@ -1,0 +1,219 @@
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix hst: <http://www.purl.org/dh/vocabs/standard/HasSkillType> .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType#01>
+  a skos:ConceptScheme ;
+  dc11:title "HasSkillType" ;
+  dc11:description "Skill Type Vocabulary" ;
+  skos:prefLabel "Skill Type Vocabulary"@en, "Vocabulário de Tipo de Habilidade"@es ;
+  skos:hasTopConcept hst:02,
+					 hst:03,
+					 hst:04,
+					 hst:05;
+  dc11:creator "Nishat Raza (nishat.nitdgp.it.2018@gmail.com) " ;
+  dc11:contributor "Animesh Dutta (animeshnit@gmail.com)", "Sangeeta Sen (sangeetaaec@gmail.com)", "Mariana Malta (maltas.org)", "Ana Alice Baptista (analice@dsi.uminho.pt)" ;
+  dc:created "2018-03-15"^^xsd:date ;
+  dc11:language "en-en" ;
+  dc11:relation <http://www.dsi.uminho.pt/> .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s02>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:altLabel "F", "Food Production" ;
+  skos:prefLabel ""@FR, ""@ES, "Daily"@EN, ""@PT, ""@IT ;
+  skos:narrower hst:13,
+	`			hst:14,
+			    hst:15;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT ;
+  skos:topConceptOf hst:s01 .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s03>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:altLabel "P", "Plumbing" ;
+  skos:prefLabel ""@FR, ""@ES, ""@EN, ""@PT, ""@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT ;
+  skos:topConceptOf hst:s01 .
+
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s04>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:altLabel "B", "Baby Sitting" ;
+  skos:prefLabel ""@FR, ""@ES, ""@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT ;
+  skos:topConceptOf hst:s01 .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s05>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:altLabel "D", "Driving" ;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES , "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:narrower hst:06,
+	`			hst:07;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT ;
+  skos:topConceptOf hst:s01 .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s06>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s05;
+  skos:narrower  hst:08;
+  skos:altLabel "3W", "3-Wheeler" ;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT ;
+  skos:topConceptOf hst:s01 .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s07>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s05;
+  skos:narrower hst:09,
+				hst:10,
+				hst:11,
+	`			hst:12;  
+  skos:altLabel "4W", "4-Wheeler" ;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+  
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s08>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:altLabel "Au", "Auto-Rickshaw" ;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT ;
+  skos:broader hst:s06.
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s09>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:altLabel "Ca", "Car" ;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:broader hst:s07;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s10>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s07;
+  skos:altLabel "Ta", "Taxi" ;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s11>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s07;
+  skos:altLabel "Tr", "Truck" ;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s12>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s07;
+  skos:altLabel "Va", "Van" ;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+ 
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s13>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s02;
+  skos:altLabel "CHF", "Cook Home Food" ;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+  
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s14>
+  a skos:Concept ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s02;
+  skos:altLabel "BK", "Baker" ;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s15>
+  a skos:Concept ;
+  skos:altLabel "CSN", "Cook Snacks" ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s02;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s16>
+  a skos:Concept ;
+  skos:altLabel "COO", "Cookies" ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s14;
+  skos:narrower hst:20,
+				hst:21;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s17>
+  a skos:Concept ;
+  skos:altLabel "Ca", "Cakes" ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s14;
+  skos:narrower hst:22,
+				hst:23,
+				hst:24;	
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+  
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s18>
+  a skos:Concept ;
+  skos:altLabel "Cuc", "CupCakes" ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s14;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+  
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s20>
+  a skos:Concept ;
+  skos:altLabel "ChocC", "ChocoChips" ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s16;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+  
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s21>
+  a skos:Concept ;
+  skos:altLabel "But", "Butter" ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s16;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s22>
+  a skos:Concept ;
+  skos:altLabel "Choc", "Chocolate" ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s19;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+
+<http://www.purl.org/dh/vocabs/standard/HasSkillType/#s23>
+  a skos:Concept ;
+  skos:altLabel "Vani", "Vanilla" ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s19;  
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+
+ <http://www.purl.org/dh/vocabs/standard/HasSkillType/#s24>
+  a skos:Concept ;
+  skos:altLabel "Rb", "Rainbow" ;
+  skos:inScheme hst:s01 ;
+  skos:broader hst:s1;
+  skos:prefLabel "Horaire"@FR, "Cada hora"@ES, "Hourly"@EN, "De hora em hora"@PT, "ogni ora"@IT ;
+  skos:scopeNote ""@FR, ""@ES, ""@EN, ""@PT, ""@IT .
+
+  
+  
+  

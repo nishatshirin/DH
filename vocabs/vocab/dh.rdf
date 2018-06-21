@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://purl.org/vocab/vann/"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <rdf:Description rdf:about="http://purl.org/dh/DH/">
+    <ns0:preferredNamespacePrefix>dh</ns0:preferredNamespacePrefix>
+    <ns0:preferredNamespaceUri>http://http://purl.org/dh/DH/</ns0:preferredNamespaceUri>
+    <dc:title xml:lang="en">dh Vocabulary</dc:title>
+    <dc:title xml:lang="pt">Vocabulário dh</dc:title>
+    <dc:title xml:lang="es">Vocabulario dh</dc:title>
+    <dc:title xml:lang="it">Vocabolario dh</dc:title>
+    <dc:title xml:lang="fr">Vocabulaire dh</dc:title>
+    <dc:description xml:lang="en">A vocabulary for Skillful Informal Sector(SIS). This vocabulary is designed to be used in combination with the metadata schemes/vocabularies/ontologies: dcterms, good relations,time, foaf,essglobal, vcard and schema.org - this is defined in the Dublin Core Application Profile of the SSE. Developed by the dh group promoting Informal labour Upliftment in association with the researchers of NIT Durgapur and Universuity de Minho.It can be a an Empowerment to the Social and Solodarity Economy (SSE)</dc:description>
+    <dc:description xml:lang="pt">Um vocabulário para o Sector Informal Hábil (SIS). Este vocabulário foi concebido para ser usado em combinação com os esquemas de metadados / vocabulários / ontologias: dcterms, boas relações, tempo, foaf, essglobal, vcard e schema.org - isto é definido no Dublin Core Application Profile do SSE. Desenvolvido pelo grupo dh de promoção da elevação do trabalho informal em associação com os investigadores do NIT Durgapur e Universuity de Minho. Pode ser um Empoderamento para a Economia Social e Solidária (SSE)</dc:description>
+    <dc:description xml:lang="es">Un vocabulario para el Sector informal hábil(SIS). Este vocabulario está diseñado para ser utilizado en combinación con los esquemas / vocabularios / ontologías de metadatos: dcterms, good relations, time, foaf, essglobal, vcard y schema.org - esto se define en el Dublin Core Application Profile del SSE. Desarrollado por el grupo dh que promueve la elevación del trabajo informal en asociación con los investigadores de NIT Durgapur y la Universidad de Minho. Puede ser un Empoderamiento de la Economía Social y Solidaria (ESS)</dc:description>
+    <dc:description xml:lang="fr">Un vocabulario para o Secteur informel habile (SIS). Este vocabulario está deseñado para ser usado en combinación cos esquemas de metadatos / vocabularios / ontoloxías: dcterms, boas relacións, tempo, foaf, essglobal, vcard e schema.org - isto defínese no Dublin Core Application Profile of the SSE. Desenvolvido polo grupo dh que promove o aproveitamento informal do traballo en asociación cos investigadores de NIT Durgapur e Universidade de Minho. Pode ser un Empoderamento á Economía Social e Solidaria (SSE)</dc:description>
+    <dc:description xml:lang="it">Un vocabolario per Skillful Informal Sector (SIS). Questo vocabolario è stato progettato per essere utilizzato in combinazione con schemi di metadati / vocabolari / ontologie: dcterms, buone relazioni, tempo, foaf, essglobal, vcard e schema.org - questo è definito nel Dublin Application Profile Profile dell'SSE. Sviluppato dal gruppo dh promuovendo il lavoro informale Upliftment in collaborazione con i ricercatori di NIT Durgapur e Universuity de Minho. Può essere un empowerment per l'economia sociale e solidale (SSE).</dc:description>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-05</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
+    <dc:publisher rdf:resource="http://opendata.dsi.uminho.pt"/>
+    <dc:creator>Nishat Raza</dc:creator>
+    <dc:contributor rdf:resource="http://www.nitdgp.ac.in"/>
+    <dc:contributor rdf:resource="http://algoritmi.uminho.pt/"/>
+  </rdf:Description>
+
+  <rdfs:Class rdf:about="http://purl.org/dh/DH/Person">
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+    <rdfs:label xml:lang="pt">Pessoa</rdfs:label>
+    <dc:description xml:lang="en">An person can be anyone - a worker,an employer etc.  </dc:description>
+    <dc:description xml:lang="pt"> Uma pessoa pode ser qualquer um - um trabalhador, um empregador, etc. </dc:description>
+    <rdfs:isDefinedBy>http://purl.org/dh/DH/</rdfs:isDefinedBy>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-06</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-04</dc:modified>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://purl.org/dh/DH/Worker">
+    <rdfs:label xml:lang="en">Worker</rdfs:label>
+    <rdfs:label xml:lang="pt">Trabalhador</rdfs:label>
+    <dc:description xml:lang="en">An person who is skilled in specific sector and can be hired.  </dc:description>
+    <dc:description xml:lang="pt"> Uma pessoa que é especializada em setores específicos e pode ser contratada. </dc:description>
+    <rdfs:isDefinedBy>http://purl.org/dh/DH/</rdfs:isDefinedBy>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:subClassOf rdf:resource="http://purl.org/dh/DH/Person"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://purl.org/dh/DH/Employer">
+    <rdfs:label xml:lang="en">Employer</rdfs:label>
+    <rdfs:label xml:lang="pt">Empregador</rdfs:label>
+    <dc:description xml:lang="en">An person needs to hire another person for completing a particular job.  </dc:description>
+    <dc:description xml:lang="pt"> Uma pessoa precisa contratar outra pessoa para completar um trabalho específico. </dc:description>
+    <rdfs:isDefinedBy>http://purl.org/dh/DH/</rdfs:isDefinedBy>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:subClassOf rdf:resource="http://purl.org/dh/DH/Person"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://purl.org/dh/DH/WorkerGroup">
+    <rdfs:label xml:lang="en">WorkerGroup</rdfs:label>
+    <rdfs:label xml:lang="pt">Gruppo di lavoro</rdfs:label>
+    <dc:description xml:lang="en">A group of individuals that participate in the SIS(Skillful Informal Sector)with same set of skills. </dc:description>
+    <dc:description xml:lang="pt">Um grupo de indivíduos que participam do SIS (Setor Informal Hábil) com o mesmo conjunto de habilidades. </dc:description>
+    <rdfs:isDefinedBy>http://purl.org/dh/DH/</rdfs:isDefinedBy>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/essglobal#SSEInitiative"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://purl.org/dh/DH/Address">
+    <rdfs:label xml:lang="en">Address</rdfs:label>
+    <rdfs:label xml:lang="pt">Endereço</rdfs:label>
+    <dc:description xml:lang="en">The physical address of the Worker,Employer,Worker Group etc. </dc:description>
+    <dc:description xml:lang="pt">O endereço físico do trabalhador, empregador, grupo de trabalhadores, etc.  </dc:description>
+    <rdfs:isDefinedBy>http://purl.org/dh/DH/</rdfs:isDefinedBy>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/essglobal#Address"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://purl.org/dh/DH/Appointment">
+    <rdfs:label xml:lang="en">Appointment</rdfs:label>
+    <rdfs:label xml:lang="pt">Compromisso</rdfs:label>
+    <dc:description xml:lang="en">An appointment or handshaking that is formed between two or more at a specific agents </dc:description>
+    <dc:description xml:lang="pt">Um compromisso ou handshaking formado entre dois ou mais em um agente específico. </dc:description>
+    <rdfs:isDefinedBy>http://purl.org/dh/DH/</rdfs:isDefinedBy>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-03-27</dc:modified>
+  </rdfs:Class>
+
+  <rdf:Description rdf:about="http://purl.org/dh/DH/SkillType">
+    <rdfs:label xml:lang="en">SkillType VES</rdfs:label>
+    <rdfs:label xml:lang="pt">SkillType VES</rdfs:label>
+    <dc:description xml:lang="en">The SkillType vocabulary encoding scheme</dc:description>
+    <dc:description xml:lang="pt">Lo schema di codifica del vocabolario SkillType</dc:description>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+        <owl:hasValue rdf:resource="http://purl.org/dh/standard/SkillType"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dh/DH/PaymentType">
+    <rdfs:label xml:lang="en">PaymentType VES</rdfs:label>
+    <rdfs:label xml:lang="pt">Tipo de pagamento VES</rdfs:label>
+    <dc:description xml:lang="en">The PaymentType vocabulary encoding scheme</dc:description>
+    <dc:description xml:lang="pt">Lo schema di codifica del vocabolario di Tipo de pagamento</dc:description>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+        <owl:hasValue rdf:resource="http://purl.org/dh/standard/PaymentType"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dh/DH/PaymentMode">
+    <rdfs:label xml:lang="en">PaymentMode VES</rdfs:label>
+    <rdfs:label xml:lang="pt">modo de pagamento VES</rdfs:label>
+    <dc:description xml:lang="en">The PaymentMode vocabulary encoding scheme</dc:description>
+    <dc:description xml:lang="pt">Lo schema di codifica del vocabolario modo de pagamento</dc:description>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+        <owl:hasValue rdf:resource="http://purl.org/dh/standard/PaymentMode"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+  </rdf:Description>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/hasRating">
+    <rdfs:label xml:lang="en">has Rating</rdfs:label>
+    <rdfs:label xml:lang="pt">Tem Avaliação</rdfs:label>
+    <dc:description xml:lang="en">The rating of the worker given to by employer according to his work behavior/Work delivered in the scale of 1 to 5. </dc:description>
+    <dc:description xml:lang="pt">A classificação do trabalhador dada pelo empregador de acordo com seu comportamento de trabalho / Trabalho entregue. </dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/hasReport">
+    <rdfs:label xml:lang="en">has Report</rdfs:label>
+    <rdfs:label xml:lang="pt">tem relatório</rdfs:label>
+    <dc:description xml:lang="en">The report associated with the employer given by a worker he hired after an appointment completion . </dc:description>
+    <dc:description xml:lang="pt">O relatório associado ao empregador dado por um trabalhador que ele contratou após um compromisso. </dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/dateOfEnrollment">
+    <rdfs:label xml:lang="en">Date Of Enrollment</rdfs:label>
+    <rdfs:label xml:lang="pt">Data de inscrição</rdfs:label>
+    <dc:description xml:lang="en">The date of enrollment of the person in the dailyhire portal . </dc:description>
+    <dc:description xml:lang="pt">A data de inscrição da pessoa no portal dailyhire. </dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/hasDefaultPayVisit">
+    <rdfs:label xml:lang="en">has Default Pay Visit</rdfs:label>
+    <rdfs:label xml:lang="pt">Tem visita de pagamento padrão</rdfs:label>
+    <dc:description xml:lang="en">The default visiting charges of a worker if the appointment(of work hiring) is fixed.</dc:description>
+    <dc:description xml:lang="pt">As taxas de visita padrão de um trabalhador se o compromisso (de contratação de trabalho) for corrigido.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/hasDailyPayScale">
+    <rdfs:label xml:lang="en">has Daily Pay Scale</rdfs:label>
+    <rdfs:label xml:lang="pt">Tem escala de pagamento diário</rdfs:label>
+    <dc:description xml:lang="en">The amount charged by a person/worker on a daily basis on account of his services discharged.</dc:description>
+    <dc:description xml:lang="pt">O montante cobrado por uma pessoa / trabalhador diariamente por conta dos seus serviços descarregados.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/hasMonthlyPayScale">
+    <rdfs:label xml:lang="en">has Monthly Pay Scale</rdfs:label>
+    <rdfs:label xml:lang="pt">Tem escala de pagamento mensal</rdfs:label>
+    <dc:description xml:lang="en">The amount charged by a person/worker on a monthly basis on account of his services discharged.</dc:description>
+    <dc:description xml:lang="pt">O valor cobrado por pessoa / trabalhador mensalmente por conta de seus serviços dispensados.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/hasHourlyPayScale">
+    <rdfs:label xml:lang="en">has Hourly Pay Scale</rdfs:label>
+    <rdfs:label xml:lang="pt">Tem escala horária de pagamento</rdfs:label>
+    <dc:description xml:lang="en">The amount charged by a person/worker on a hourly basis on account of his services discharged.</dc:description>
+    <dc:description xml:lang="pt">O montante cobrado por pessoa / trabalhador por hora, por conta dos seus serviços descarregados.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/hasPayPerPiece">
+    <rdfs:label xml:lang="en">has Pay Per Piece</rdfs:label>
+    <rdfs:label xml:lang="pt">Tem Pay Per Piece</rdfs:label>
+    <dc:description xml:lang="en">The amount charged by a worker on a Piece of his work,like a painting to an artist.</dc:description>
+    <dc:description xml:lang="pt">O valor cobrado por uma trabalhador em um pedaço de seu trabalho, como uma pintura para um artista.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/DateOrgCreated">
+    <rdfs:label xml:lang="en">Date Of Constitution</rdfs:label>
+    <rdfs:label xml:lang="pt">Data da Constituição</rdfs:label>
+    <dc:description xml:lang="en">It refers to the date of constitution of an organistion,here a worker group.</dc:description>
+    <dc:description xml:lang="pt">Refere-se à data de constituição de uma organização, aqui um grupo de trabalhadores.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/hasBuildingName">
+    <rdfs:label xml:lang="en">has Building Name</rdfs:label>
+    <rdfs:label xml:lang="pt">Tem nome do edifício</rdfs:label>
+    <dc:description xml:lang="en">It refers to the building name for easy identification of a person's address.</dc:description>
+    <dc:description xml:lang="pt">Refere-se ao nome do prédio para facilitar a identificação do endereço de uma pessoa.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/Landmark">
+    <rdfs:label xml:lang="en">Landmark</rdfs:label>
+    <rdfs:label xml:lang="pt">Ponto de referência</rdfs:label>
+    <dc:description xml:lang="en">It refers to the landmark for easy identification of the place where a person's address.</dc:description>
+    <dc:description xml:lang="pt">Refere-se ao marco para facilitar a identificação do local onde o endereço de uma pessoa.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/startDateTime">
+    <rdfs:label xml:lang="en">start Date Time</rdfs:label>
+    <rdfs:label xml:lang="pt">Hora da data de início</rdfs:label>
+    <dc:description xml:lang="en">The start date and time for an appointment that takes place.</dc:description>
+    <dc:description xml:lang="pt">A data e hora de início de um compromisso que ocorre.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/endDateTime">
+    <rdfs:label xml:lang="en">end Date Time</rdfs:label>
+    <rdfs:label xml:lang="pt">Hora da data de término</rdfs:label>
+    <dc:description xml:lang="en">The end date and time for an appointment that takes place.</dc:description>
+    <dc:description xml:lang="pt">A data e hora de término de um compromisso que ocorre.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/appointmentDescription">
+    <rdfs:label xml:lang="en">appointment Description</rdfs:label>
+    <rdfs:label xml:lang="pt">Descrição do Compromisso</rdfs:label>
+    <dc:description xml:lang="en">The detailed description of an appointment(about hiring need and work).</dc:description>
+    <dc:description xml:lang="pt">A data e hora de término de um compromisso que ocorre.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/isHavingSameAddress">
+    <rdfs:label xml:lang="en">is Having Same Address</rdfs:label>
+    <rdfs:label xml:lang="pt">sta avendo lo stesso indirizzo</rdfs:label>
+    <dc:description xml:lang="en">Boolean value corresponding to having same address or not.</dc:description>
+    <dc:description xml:lang="pt">Valore booleano che corrisponde allo stesso indirizzo o no.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/hasPieceTypeOrderOf">
+    <rdfs:label xml:lang="en">has Piece Type Order Of</rdfs:label>
+    <rdfs:label xml:lang="pt">tem ordem de tipo de peça de</rdfs:label>
+    <dc:description xml:lang="en">This specifies the work piece type(for example cake type is to baker) that is ordered/ asked to fix by the job provider.</dc:description>
+    <dc:description xml:lang="pt">Isso especifica o número do tipo de peça de trabalho (por exemplo, número de bolos é para o padeiro) que é pedido / pedido para ser corrigido pelo provedor de serviços.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://purl.org/dh/DH/SkillType"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/booksNoOfpieces">
+    <rdfs:label xml:lang="en">books No Of pieces</rdfs:label>
+    <rdfs:label xml:lang="pt">Livros Não De Peças</rdfs:label>
+    <dc:description xml:lang="en">This is the number of work piece type(example a cake for a baker)booked/asked to be fixed(example a tap to a plumber) according to the appointment.</dc:description>
+    <dc:description xml:lang="pt">Este é o número de tipo de peça de trabalho (por exemplo, um bolo para um padeiro) reservado / pedido para ser corrigido (por exemplo, uma torneira para um encanador) de acordo com o compromisso.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dh/DH/hasAppointmentAddress">
+    <rdfs:label xml:lang="en">has Appointment Address</rdfs:label>
+    <rdfs:label xml:lang="pt">ha l'indirizzo di appuntamento</rdfs:label>
+    <dc:description xml:lang="en">The appointment address is specified if hasSameAddress value is False.</dc:description>
+    <dc:description xml:lang="pt">L'indirizzo dell'appuntamento è specificato se il valore hasSameAddress è False.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.org/dh/DH/BooksAppointment">
+    <rdfs:label xml:lang="en">Books Appointment</rdfs:label>
+    <rdfs:label xml:lang="pt">Nomeação de Livros</rdfs:label>
+    <dc:description xml:lang="en">This object property is to help a person Employer book an appointment with a worker when his suitable required skills,or other constraints are matched.</dc:description>
+    <dc:description xml:lang="pt">Esta propriedade de objeto é para ajudar uma pessoa Empregador a marcar uma consulta com um funcionário quando suas habilidades necessárias adequadas ou outras restrições forem correspondidas.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.org/dh/DH/hasAppointmentHolder">
+    <rdfs:label xml:lang="en">has Appointment Holder</rdfs:label>
+    <rdfs:label xml:lang="pt">Titular de nomeação</rdfs:label>
+    <dc:description xml:lang="en">This object property is to identify the employer,worker or worker groups that are involved in an appointment after the appointment is booked.</dc:description>
+    <dc:description xml:lang="pt">Esta propriedade de objeto é identificar o empregador, trabalhador ou grupos de trabalhadores que estão envolvidos em um compromisso após o compromisso ser reservado.</dc:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dh/DH/"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-15</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-27</dc:modified>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
